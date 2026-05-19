@@ -104,3 +104,12 @@ python service.py restart
 - Transcription happens in a background thread; you can't start a new recording while one is processing.
 - Very short recordings (less than ~0.5s) may produce no output.
 - Audio is padded to a multiple of 80 samples to satisfy an internal requirement of the Moonshine streaming model.
+
+---
+
+## Attribution
+
+Sound effects from Pixabay:
+
+- [Pop sound effect](https://pixabay.com/sound-effects/film-special-effects-pop-sound-423716/) by SoundReality
+- [Bubble pop sound effect](https://pixabay.com/sound-effects/film-special-effects-bubble-pop-406640/) by DRAGON-STUDIO
