@@ -31,7 +31,7 @@ def run(stop_event: threading.Event) -> None:
     sound_beep, sr_start = _load_sound(_BASE / "sounds" / "single-pop.mp3")
     sound_done, _sr_stop = _load_sound(_BASE / "sounds" / "triple-pop.mp3")
 
-    _sfx_channels = sound_start.shape[1] if sound_start.ndim > 1 else 1
+    _sfx_channels = sound_beep.shape[1] if sound_beep.ndim > 1 else 1
     _sfx_stream = sd.OutputStream(samplerate=sr_start, channels=_sfx_channels, dtype="float32")
     _sfx_stream.start()
 
